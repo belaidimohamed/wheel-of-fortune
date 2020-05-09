@@ -1,0 +1,3 @@
+- 1st version of "wheel of fortune" .
+- Still missing the classes of wheel and players  .
+- Still missing the function that return a random phrase .
