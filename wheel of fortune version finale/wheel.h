@@ -20,10 +20,10 @@ class Wheel{
                 srand(time(NULL));; //call it once to generate random number
                 int nbgen=rand()%10;    // get a random number between 0-9 (index of array)
                 if(lang=="French"){
-                    cout<<" Roue rotate ..  " ;
+                    cout<<" La roue est en train de to tourner ..  " ;
                 }
                 else{cout<<" Spining wheel ..  " ;}
-                
+
                 std::cout << '-' << std::flush;
                 for (int i=0 ;i<7 ; i++) {
                     usleep(85000);
@@ -39,7 +39,7 @@ class Wheel{
                     cout<<"\n La roue a choisi le score de : " ;
                 }
                 else{cout<<"\n The wheel has chosen the score of : " ;}
-                
+
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),13);
                 cout <<  wheel_prizes[nbgen] ;
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),15);
